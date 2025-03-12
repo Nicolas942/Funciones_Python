@@ -1,8 +1,10 @@
-def Nombre(nombre, veces):
-    for i in range(1,veces +1):
-        print(f"{i}. {nombre}")
+def Nombre(cadena, veces):
+    for i in range(1,veces + 1):
+        print(f"{i}. {cadena}")
 
-nombre = input("Ingrese su nombre ")
+cadena= input("Ingrese una cadena de texto: ")
 veces = int(input("Cuantas veces quiere repetir el texto: "))
 
-print(Nombre(nombre, veces))
+print(Nombre(cadena, veces))
+
+print("Eso era ...")
