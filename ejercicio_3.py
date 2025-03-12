@@ -1,12 +1,20 @@
-lista = [1,2,3,4,5]
+import random
 
-
-
-def sumalista(lista):
-    return sum(lista)
-
-        
+def Sumalista(lista):
+    suma = 0
+    for i in lista:
+        suma = suma + i
+    return suma
     
 
+lista = []
 
-print(sumalista(lista))
+n = int(input("Dijite el tamaño de la lista: "))
+
+for i in range(n):
+    num = random.randint(1,9)
+    lista.append(num)
+
+
+print(f"lista: {lista}")
+print(f"la suma es {Sumalista(lista)}")
